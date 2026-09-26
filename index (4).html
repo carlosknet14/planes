@@ -193,4 +193,102 @@ body.fallas{--bg:#0d2a55;--ink:#fff8e7;--muted:#c3d0e6;--accent:#ffcc00;--card:r
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 </head>
-<body class="kraft"><main><section class="gate"><p class="to">Per a Clareta</p><div class="env"><div class="flap"></div><div class="seal">?</div></div><h1>Ací no hi ha res a veure 👀</h1><p>Els plans s'obrin amb el seu QR, cadascun en el seu mes. Torna al teu sobre.</p></section></main></body></html>
+<body class="kraft">
+<div id="bg"></div>
+<main id="app"></main>
+<script>window.SOBRE={"n": 2, "month": "Octubre", "unlock": "2026-09-30T22:00:00Z", "unlock_txt": "1 d'octubre", "month_de": "d'octubre", "payload": "eyJ0aGVtZSI6ICJ2aW5vIiwgImJnIjogIjxkaXYgY2xhc3M9XCJkcm9wIGQxXCI+PC9kaXY+PGRpdiBjbGFzcz1cImRyb3AgZDJcIj48L2Rpdj48ZGl2IGNsYXNzPVwiZHJvcCBkM1wiPjwvZGl2PiIsICJodG1sIjogIlxuPHAgY2xhc3M9XCJleWVicm93XCI+U29icmUgMiDCtyBPY3R1YnJlPC9wPlxuPGgxPlNvcGFyIGRlIGNlbGVicmFjacOzPC9oMT5cblxuPGRpdiBjbGFzcz1cImdsYXNzLXdyYXBcIj5cbjxzdmcgY2xhc3M9XCJnbGFzc1wiIHZpZXdCb3g9XCIwIDAgMTIwIDE4MFwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiPlxuICA8cGF0aCBkPVwiTTI1IDEwIEg5NSBROTggNzAgNjAgOTIgUTIyIDcwIDI1IDEwIFpcIiBmaWxsPVwibm9uZVwiIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiIHN0cm9rZS13aWR0aD1cIjRcIi8+XG4gIDxwYXRoIGNsYXNzPVwid2luZVwiIGQ9XCJNMjkgNDUgSDkxIFE4OCA3MiA2MCA4NiBRMzIgNzIgMjkgNDUgWlwiLz5cbiAgPGxpbmUgeDE9XCI2MFwiIHkxPVwiOTJcIiB4Mj1cIjYwXCIgeTI9XCIxNjBcIiBzdHJva2U9XCJjdXJyZW50Q29sb3JcIiBzdHJva2Utd2lkdGg9XCI0XCIvPlxuICA8cGF0aCBkPVwiTTMyIDE2NSBRNjAgMTUyIDg4IDE2NVwiIGZpbGw9XCJub25lXCIgc3Ryb2tlPVwiY3VycmVudENvbG9yXCIgc3Ryb2tlLXdpZHRoPVwiNFwiIHN0cm9rZS1saW5lY2FwPVwicm91bmRcIi8+XG48L3N2Zz5cbjxwIGNsYXNzPVwiYmlnXCI+QWl4w60gcXVl4oCmIGh1aSBlcyBkZW1hbmEgPGVtPnZpPC9lbT4hISE8L3A+XG48L2Rpdj5cblxuPHAgY2xhc3M9XCJsZWFkXCI+SGkgaGEgY29zZXMgcXVlIHNlIGNlbGVicmVuIGFtYiBhaWd1YS4gRXN0YSBubyDDqXMgdW5hIGQnZWxsZXMuPC9wPlxuXG48ZGl2IGNsYXNzPVwiY2FyZFwiPlxuICA8aDI+Tm9ybWVzIGRlIGxhIHRhdWxhPC9oMj5cbiAgPG9sPlxuICAgIDxsaT5FcyBicmluZGEgbWlyYW50LXNlIGFscyB1bGxzLiBTaSBubywgc2V0IGFueXMgZGUgbWFsYSBzb3J0IChubyBobyBkaWMgam8sIGhvIGRpdSBsYSBjacOobmNpYSkuPC9saT5cbiAgICA8bGk+VHUgdHJpZXMgZWwgdmkuIEpvIHBvc2UgY2FyYSBxdWUgZW0gcGFyZWl4IGLDqSBpIGRpYyDCq3PDrSwgY2FyaW55b8K7LjwvbGk+XG4gICAgPGxpPlBvc3RyZXMgb2JsaWdhdMOycmllcy4gQcOnw7Igbm8gZXMgbmVnb2NpYS48L2xpPlxuICA8L29sPlxuPC9kaXY+XG5cbjxkaXYgY2xhc3M9XCJwc1wiPlxuICA8c3ZnIHZpZXdCb3g9XCIwIDAgNjAgNDBcIiBjbGFzcz1cImNvcmtcIiBhcmlhLWhpZGRlbj1cInRydWVcIj48cmVjdCB4PVwiNlwiIHk9XCI4XCIgd2lkdGg9XCI0OFwiIGhlaWdodD1cIjI0XCIgcng9XCI2XCIgZmlsbD1cIiNjODlhNjJcIi8+PHJlY3QgeD1cIjZcIiB5PVwiOFwiIHdpZHRoPVwiMTBcIiBoZWlnaHQ9XCIyNFwiIHJ4PVwiNFwiIGZpbGw9XCIjN2ExZjNkXCIgb3BhY2l0eT1cIi43NVwiLz48Y2lyY2xlIGN4PVwiMjZcIiBjeT1cIjE1XCIgcj1cIjEuNlwiIGZpbGw9XCIjOGI2NDM3XCIvPjxjaXJjbGUgY3g9XCIzOFwiIGN5PVwiMjRcIiByPVwiMS44XCIgZmlsbD1cIiM4YjY0MzdcIi8+PGNpcmNsZSBjeD1cIjQ2XCIgY3k9XCIxM1wiIHI9XCIxLjNcIiBmaWxsPVwiIzhiNjQzN1wiLz48Y2lyY2xlIGN4PVwiMzFcIiBjeT1cIjI2XCIgcj1cIjEuMlwiIGZpbGw9XCIjOGI2NDM3XCIvPjwvc3ZnPlxuICA8cD5QRC4gUmVjb3JkYSBndWFyZGFyIGVsIHRhcCBkZSBzdXJvIGRlIHJlY29yZC4gVmEgZGlyZWN0ZSBhIGxhIGNvbMK3bGVjY2nDsy48L3A+XG48L2Rpdj5cbjxkaXYgY2xhc3M9XCJwaG90b1wiPjxzcGFuPvCfk7g8L3NwYW4+PGRpdj48Yj5Gb3RvIHBlciBhIGwnw6BsYnVtPC9iPjxicj5FbCBicmluZGlz4oCmIGkgZWwgdGFwLCBxdWUgaHVpIMOpcyBlbCBwcm90YWdvbmlzdGEuPC9kaXY+PC9kaXY+IiwgImNvbmZldHRpIjogWyIjN2ExZjNkIiwgIiNjOWEyMjciLCAiI2YzZTZkMCIsICIjYjIzYTViIl19"};</script>
+<script>
+(function(){
+  var C = window.SOBRE, app = document.getElementById('app'), bg = document.getElementById('bg');
+  var q = new URLSearchParams(location.search);
+  var preview = q.get('preview') === 'cq7x';
+  var unlock = Date.parse(C.unlock);
+  function store(k,v){try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k,JSON.stringify(v)); }catch(e){ return null; }}
+  function decode(b){ var s=atob(b), a=new Uint8Array(s.length); for(var i=0;i<s.length;i++)a[i]=s.charCodeAt(i); return JSON.parse(new TextDecoder().decode(a)); }
+  var QUIPS = ["Para, para, Clareta!","Eh, eh, eh… qui t'ha donat permís?","Bon intent. Molt bon intent.","La paciència també és un pla.","Este sobre encara està dormint."];
+
+  function envelope(){ return '<div class="env" id="env"><div class="flap"></div><div class="seal">'+C.n+'</div></div>'; }
+
+  function locked(){
+    var quip = QUIPS[Math.floor(Math.random()*QUIPS.length)];
+    app.innerHTML = '<section class="gate"><p class="to">Per a Clareta</p>'+envelope()+
+      '<h1>'+quip+'</h1><p>Este sobre no s\'obri fins a l\'<b>'+C.unlock_txt+'</b>. Fins llavors, a imaginar.</p>'+
+      '<div class="cd" id="cd"></div></section>';
+    var cd = document.getElementById('cd');
+    function tick(){
+      var ms = unlock - Date.now();
+      if (ms <= 0) { location.reload(); return; }
+      var s = Math.floor(ms/1000), d = Math.floor(s/86400), h = Math.floor(s%86400/3600), m = Math.floor(s%3600/60), x = s%60;
+      cd.innerHTML = [[d,'dies'],[h,'hores'],[m,'min'],[x,'seg']].map(function(p){return '<div><b>'+String(p[0]).padStart(2,'0')+'</b><small>'+p[1]+'</small></div>';}).join('');
+    }
+    tick(); setInterval(tick, 1000);
+  }
+
+  function sealed(){
+    app.innerHTML = '<section class="gate" id="gate"><p class="to">Per a Clareta</p>'+envelope()+
+      '<h1>Ha arribat el teu sobre '+C.month_de+'</h1><button class="open-btn" id="open">Toca per a obrir</button></section>';
+    document.getElementById('open').onclick = function(){
+      document.getElementById('env').classList.add('opening');
+      document.getElementById('gate').classList.add('fade');
+      setTimeout(reveal, 1100);
+    };
+  }
+
+  function reveal(){
+    var P = decode(C.payload);
+    document.body.className = P.theme;
+    bg.innerHTML = P.bg;
+    app.innerHTML = '<article class="msg">'+P.html+'</article>';
+    window.scrollTo(0,0);
+    confetti(P.confetti);
+    wireChoices(P.confetti); wireChecks(P.confetti);
+  }
+
+  function wireChoices(colors){
+    var box = document.querySelector('.choices'); if(!box) return;
+    var res = document.getElementById('choice-result'), key = box.dataset.key;
+    function pick(btn, anim){
+      box.querySelectorAll('.choice').forEach(function(b){b.classList.toggle('sel', b===btn);});
+      box.classList.add('made'); res.textContent = btn.dataset.result; res.classList.add('ok');
+      store(key, btn.dataset.id); if(anim) confetti(colors);
+    }
+    box.querySelectorAll('.choice').forEach(function(b){ b.onclick = function(){ pick(b, true); }; });
+    var saved = store(key); if (saved) { var b = box.querySelector('[data-id="'+saved+'"]'); if (b) pick(b, false); }
+  }
+
+  function wireChecks(colors){
+    var box = document.querySelector('.checks'); if(!box) return;
+    var key = box.dataset.key, st = store(key) || {}, items = box.querySelectorAll('.check');
+    var prog = document.getElementById('progress'), done = document.getElementById('all-done');
+    function render(anim){
+      var n = 0; items.forEach(function(b){ var on=!!st[b.dataset.id]; b.classList.toggle('on',on); if(on)n++; });
+      prog.textContent = n+' / '+items.length+' completats';
+      var all = n === items.length; var was = done.classList.contains('show');
+      done.classList.toggle('show', all); if (all && !was && anim) confetti(colors, 260);
+    }
+    items.forEach(function(b){ b.onclick = function(){ st[b.dataset.id] = !st[b.dataset.id]; store(key, st); render(true); }; });
+    render(false);
+  }
+
+  function confetti(colors, count){
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var c = document.createElement('canvas'); c.id='confetti'; document.body.appendChild(c);
+    var x = c.getContext('2d'), W = c.width = innerWidth*devicePixelRatio, H = c.height = innerHeight*devicePixelRatio, dpr = devicePixelRatio;
+    c.style.width = innerWidth+'px'; c.style.height = innerHeight+'px';
+    var ps = []; count = count || 160;
+    for (var i=0;i<count;i++) ps.push({x:W/2+(Math.random()-.5)*W*.3, y:H*.35, vx:(Math.random()-.5)*14*dpr, vy:(-Math.random()*16-4)*dpr,
+      w:(6+Math.random()*6)*dpr, h:(8+Math.random()*10)*dpr, r:Math.random()*6, vr:(Math.random()-.5)*.3, col:colors[i%colors.length]});
+    var t = 0;
+    (function loop(){
+      x.clearRect(0,0,W,H); t++;
+      ps.forEach(function(p){ p.vy += .45*dpr; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.r += p.vr;
+        x.save(); x.translate(p.x,p.y); x.rotate(p.r); x.fillStyle=p.col; x.globalAlpha=Math.max(0,1-t/170); x.fillRect(-p.w/2,-p.h/2,p.w,p.h); x.restore(); });
+      if (t < 170) requestAnimationFrame(loop); else c.remove();
+    })();
+  }
+
+  if (Date.now() >= unlock || preview) sealed(); else locked();
+})();
+</script>
+</body>
+</html>

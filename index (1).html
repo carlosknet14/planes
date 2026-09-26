@@ -193,4 +193,102 @@ body.fallas{--bg:#0d2a55;--ink:#fff8e7;--muted:#c3d0e6;--accent:#ffcc00;--card:r
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 </head>
-<body class="kraft"><main><section class="gate"><p class="to">Per a Clareta</p><div class="env"><div class="flap"></div><div class="seal">?</div></div><h1>Ací no hi ha res a veure 👀</h1><p>Els plans s'obrin amb el seu QR, cadascun en el seu mes. Torna al teu sobre.</p></section></main></body></html>
+<body class="kraft">
+<div id="bg"></div>
+<main id="app"></main>
+<script>window.SOBRE={"n": 7, "month": "Març", "unlock": "2027-02-28T23:00:00Z", "unlock_txt": "1 de març", "month_de": "de març", "payload": "eyJ0aGVtZSI6ICJmYWxsYXMiLCAiYmciOiAiPGRpdiBjbGFzcz1cInNwYXJrc1wiPjxpIHN0eWxlPVwibGVmdDo4JTt0b3A6NiU7YW5pbWF0aW9uLWRlbGF5Oi0wLjBzXCI+PC9pPjxpIHN0eWxlPVwibGVmdDozMSU7dG9wOjIzJTthbmltYXRpb24tZGVsYXk6LTAuN3NcIj48L2k+PGkgc3R5bGU9XCJsZWZ0OjU0JTt0b3A6NDAlO2FuaW1hdGlvbi1kZWxheTotMS40c1wiPjwvaT48aSBzdHlsZT1cImxlZnQ6NzclO3RvcDoxNyU7YW5pbWF0aW9uLWRlbGF5Oi0yLjFzXCI+PC9pPjxpIHN0eWxlPVwibGVmdDoxNiU7dG9wOjM0JTthbmltYXRpb24tZGVsYXk6LTIuOHNcIj48L2k+PGkgc3R5bGU9XCJsZWZ0OjM5JTt0b3A6MTElO2FuaW1hdGlvbi1kZWxheTotMy41c1wiPjwvaT48aSBzdHlsZT1cImxlZnQ6NjIlO3RvcDoyOCU7YW5pbWF0aW9uLWRlbGF5Oi0wLjJzXCI+PC9pPjxpIHN0eWxlPVwibGVmdDo4NSU7dG9wOjQ1JTthbmltYXRpb24tZGVsYXk6LTAuOXNcIj48L2k+PGkgc3R5bGU9XCJsZWZ0OjI0JTt0b3A6MjIlO2FuaW1hdGlvbi1kZWxheTotMS42c1wiPjwvaT48aSBzdHlsZT1cImxlZnQ6NDclO3RvcDozOSU7YW5pbWF0aW9uLWRlbGF5Oi0yLjNzXCI+PC9pPjxpIHN0eWxlPVwibGVmdDo3MCU7dG9wOjE2JTthbmltYXRpb24tZGVsYXk6LTMuMHNcIj48L2k+PGkgc3R5bGU9XCJsZWZ0OjklO3RvcDozMyU7YW5pbWF0aW9uLWRlbGF5Oi0zLjdzXCI+PC9pPjwvZGl2PjxkaXYgY2xhc3M9XCJzZW55ZXJhXCI+PC9kaXY+IiwgImh0bWwiOiAiXG48cCBjbGFzcz1cImV5ZWJyb3dcIj5Tb2JyZSA3IMK3IE1hcsOnPC9wPlxuPGgxPlBhY2sgZmFsbGVyIGNvbXBsZXQ8L2gxPlxuPHAgY2xhc3M9XCJsZWFkXCI+UMOzbHZvcmEsIG3DunNpY2EgaSBidW55b2xzLiBQZXIgYSBkb25hciBlbCBwYWNrIHBlciBjb21wbGV0IGhpIGhhIDxiPjMgY2hlY2tzIG9ibGlnYXRvcmlzPC9iPi4gU2Vuc2UgZXhjdXNlcyBpIHNlbnNlIHRyYW1wZXMuPC9wPlxuXG48ZGl2IGNsYXNzPVwiY2hlY2tzXCIgZGF0YS1rZXk9XCJtYXItY2hlY2tzXCI+XG4gIDxidXR0b24gY2xhc3M9XCJjaGVja1wiIGRhdGEtaWQ9XCJjMVwiPjxzcGFuIGNsYXNzPVwiYm94XCI+PC9zcGFuPjxzcGFuPjxiPvCfkqUgTWFzY2xldMOgIGVscyBkb3MganVudHM8L2I+PHNtYWxsPkVuIHByaW1lcmEgZmlsYSBkZSBzb3JvbGwuIFRhcHMgcGVyIGEgbGVzIG9yZWxsZXMgb3BjaW9uYWxzLCBhYnJhw6dhZGEgZmluYWwgb2JsaWdhdMOycmlhLjwvc21hbGw+PC9zcGFuPjwvYnV0dG9uPlxuICA8YnV0dG9uIGNsYXNzPVwiY2hlY2tcIiBkYXRhLWlkPVwiYzJcIj48c3BhbiBjbGFzcz1cImJveFwiPjwvc3Bhbj48c3Bhbj48Yj7wn5GVIEZvdG8gYW1iIGxhIGNhbWlzZXRhIGRlIGxhIGZhbGxhIGVuIGwnZW50cmVnYTwvYj48c21hbGw+U29tcml1cmUgZGUgZm90byBvZmljaWFsLCBlbmNhcmEgcXVlIGZhY2VuIG1hbCBlbHMgcGV1cy48L3NtYWxsPjwvc3Bhbj48L2J1dHRvbj5cbiAgPGJ1dHRvbiBjbGFzcz1cImNoZWNrXCIgZGF0YS1pZD1cImMzXCI+PHNwYW4gY2xhc3M9XCJib3hcIj48L3NwYW4+PHNwYW4+PGI+8J+ktSBGb3RvIGFtYiBlbCB2ZXN0aXQgbm91IGRlIENhcmxvczwvYj48c21hbGw+U8OtLCBlbCB2ZXN0aXQgbm91LiBOb23DqXMgcydhZG1ldGVuIGNvbWVudGFyaXMgcG9zaXRpdXMuPC9zbWFsbD48L3NwYW4+PC9idXR0b24+XG48L2Rpdj5cbjxwIGNsYXNzPVwicHJvZ3Jlc3NcIiBpZD1cInByb2dyZXNzXCI+MCAvIDMgY29tcGxldGF0czwvcD5cbjxkaXYgY2xhc3M9XCJkb25lXCIgaWQ9XCJhbGwtZG9uZVwiPlxuICA8Yj5QQUNLIEZBTExFUiBDT01QTEVUQVQg4pyTPC9iPlxuICA8c3Bhbj5WaXNjYSBsZXMgRmFsbGVzISDwn5SlIFRlbXBvcmFkYSAxIGRlIHBsYW5zOiBzdXBlcmFkYS48L3NwYW4+XG48L2Rpdj5cbiIsICJjb25mZXR0aSI6IFsiI2ZmY2MwMCIsICIjZDUyYjFlIiwgIiMxZTVhYTgiLCAiI2ZmZmZmZiJdfQ=="};</script>
+<script>
+(function(){
+  var C = window.SOBRE, app = document.getElementById('app'), bg = document.getElementById('bg');
+  var q = new URLSearchParams(location.search);
+  var preview = q.get('preview') === 'cq7x';
+  var unlock = Date.parse(C.unlock);
+  function store(k,v){try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k,JSON.stringify(v)); }catch(e){ return null; }}
+  function decode(b){ var s=atob(b), a=new Uint8Array(s.length); for(var i=0;i<s.length;i++)a[i]=s.charCodeAt(i); return JSON.parse(new TextDecoder().decode(a)); }
+  var QUIPS = ["Para, para, Clareta!","Eh, eh, eh… qui t'ha donat permís?","Bon intent. Molt bon intent.","La paciència també és un pla.","Este sobre encara està dormint."];
+
+  function envelope(){ return '<div class="env" id="env"><div class="flap"></div><div class="seal">'+C.n+'</div></div>'; }
+
+  function locked(){
+    var quip = QUIPS[Math.floor(Math.random()*QUIPS.length)];
+    app.innerHTML = '<section class="gate"><p class="to">Per a Clareta</p>'+envelope()+
+      '<h1>'+quip+'</h1><p>Este sobre no s\'obri fins a l\'<b>'+C.unlock_txt+'</b>. Fins llavors, a imaginar.</p>'+
+      '<div class="cd" id="cd"></div></section>';
+    var cd = document.getElementById('cd');
+    function tick(){
+      var ms = unlock - Date.now();
+      if (ms <= 0) { location.reload(); return; }
+      var s = Math.floor(ms/1000), d = Math.floor(s/86400), h = Math.floor(s%86400/3600), m = Math.floor(s%3600/60), x = s%60;
+      cd.innerHTML = [[d,'dies'],[h,'hores'],[m,'min'],[x,'seg']].map(function(p){return '<div><b>'+String(p[0]).padStart(2,'0')+'</b><small>'+p[1]+'</small></div>';}).join('');
+    }
+    tick(); setInterval(tick, 1000);
+  }
+
+  function sealed(){
+    app.innerHTML = '<section class="gate" id="gate"><p class="to">Per a Clareta</p>'+envelope()+
+      '<h1>Ha arribat el teu sobre '+C.month_de+'</h1><button class="open-btn" id="open">Toca per a obrir</button></section>';
+    document.getElementById('open').onclick = function(){
+      document.getElementById('env').classList.add('opening');
+      document.getElementById('gate').classList.add('fade');
+      setTimeout(reveal, 1100);
+    };
+  }
+
+  function reveal(){
+    var P = decode(C.payload);
+    document.body.className = P.theme;
+    bg.innerHTML = P.bg;
+    app.innerHTML = '<article class="msg">'+P.html+'</article>';
+    window.scrollTo(0,0);
+    confetti(P.confetti);
+    wireChoices(P.confetti); wireChecks(P.confetti);
+  }
+
+  function wireChoices(colors){
+    var box = document.querySelector('.choices'); if(!box) return;
+    var res = document.getElementById('choice-result'), key = box.dataset.key;
+    function pick(btn, anim){
+      box.querySelectorAll('.choice').forEach(function(b){b.classList.toggle('sel', b===btn);});
+      box.classList.add('made'); res.textContent = btn.dataset.result; res.classList.add('ok');
+      store(key, btn.dataset.id); if(anim) confetti(colors);
+    }
+    box.querySelectorAll('.choice').forEach(function(b){ b.onclick = function(){ pick(b, true); }; });
+    var saved = store(key); if (saved) { var b = box.querySelector('[data-id="'+saved+'"]'); if (b) pick(b, false); }
+  }
+
+  function wireChecks(colors){
+    var box = document.querySelector('.checks'); if(!box) return;
+    var key = box.dataset.key, st = store(key) || {}, items = box.querySelectorAll('.check');
+    var prog = document.getElementById('progress'), done = document.getElementById('all-done');
+    function render(anim){
+      var n = 0; items.forEach(function(b){ var on=!!st[b.dataset.id]; b.classList.toggle('on',on); if(on)n++; });
+      prog.textContent = n+' / '+items.length+' completats';
+      var all = n === items.length; var was = done.classList.contains('show');
+      done.classList.toggle('show', all); if (all && !was && anim) confetti(colors, 260);
+    }
+    items.forEach(function(b){ b.onclick = function(){ st[b.dataset.id] = !st[b.dataset.id]; store(key, st); render(true); }; });
+    render(false);
+  }
+
+  function confetti(colors, count){
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var c = document.createElement('canvas'); c.id='confetti'; document.body.appendChild(c);
+    var x = c.getContext('2d'), W = c.width = innerWidth*devicePixelRatio, H = c.height = innerHeight*devicePixelRatio, dpr = devicePixelRatio;
+    c.style.width = innerWidth+'px'; c.style.height = innerHeight+'px';
+    var ps = []; count = count || 160;
+    for (var i=0;i<count;i++) ps.push({x:W/2+(Math.random()-.5)*W*.3, y:H*.35, vx:(Math.random()-.5)*14*dpr, vy:(-Math.random()*16-4)*dpr,
+      w:(6+Math.random()*6)*dpr, h:(8+Math.random()*10)*dpr, r:Math.random()*6, vr:(Math.random()-.5)*.3, col:colors[i%colors.length]});
+    var t = 0;
+    (function loop(){
+      x.clearRect(0,0,W,H); t++;
+      ps.forEach(function(p){ p.vy += .45*dpr; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.r += p.vr;
+        x.save(); x.translate(p.x,p.y); x.rotate(p.r); x.fillStyle=p.col; x.globalAlpha=Math.max(0,1-t/170); x.fillRect(-p.w/2,-p.h/2,p.w,p.h); x.restore(); });
+      if (t < 170) requestAnimationFrame(loop); else c.remove();
+    })();
+  }
+
+  if (Date.now() >= unlock || preview) sealed(); else locked();
+})();
+</script>
+</body>
+</html>

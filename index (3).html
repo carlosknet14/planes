@@ -193,4 +193,102 @@ body.fallas{--bg:#0d2a55;--ink:#fff8e7;--muted:#c3d0e6;--accent:#ffcc00;--card:r
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 </head>
-<body class="kraft"><main><section class="gate"><p class="to">Per a Clareta</p><div class="env"><div class="flap"></div><div class="seal">?</div></div><h1>Ací no hi ha res a veure 👀</h1><p>Els plans s'obrin amb el seu QR, cadascun en el seu mes. Torna al teu sobre.</p></section></main></body></html>
+<body class="kraft">
+<div id="bg"></div>
+<main id="app"></main>
+<script>window.SOBRE={"n": 1, "month": "Octubre", "unlock": "2026-09-30T22:00:00Z", "unlock_txt": "1 d'octubre", "month_de": "d'octubre", "payload": "eyJ0aGVtZSI6ICJtb3JhdCIsICJiZyI6ICI8ZGl2IGNsYXNzPVwic3BvdCBzMVwiPjwvZGl2PjxkaXYgY2xhc3M9XCJzcG90IHMyXCI+PC9kaXY+PGRpdiBjbGFzcz1cInNwb3QgczNcIj48L2Rpdj5cbjxkaXYgY2xhc3M9XCJub3Rlc1wiPjxpPuKZqjwvaT48aT7imas8L2k+PGk+4pmqPC9pPjxpPuKZrDwvaT48aT7imas8L2k+PC9kaXY+IiwgImh0bWwiOiAiXG48cCBjbGFzcz1cImV5ZWJyb3dcIj5Tb2JyZSAxIMK3IE9jdHVicmUgKGVzdGUgbWVzIHZlIGRvYmxlKTwvcD5cbjxoMT5NZWV0aW5nIGFtYiBsYSBmYW3DrWxpYSBTYWxhczwvaDE+XG48cCBjbGFzcz1cImxlYWRcIj5FcyBjb252b2NhIHVuYSByZXVuacOzIGQnYWx0IG5pdmVsbC4gTGxvYzogZWwgY29uY2VydCBkZSBNb3JhdC4gQXNzaXN0w6huY2lhIG9ibGlnYXTDsnJpYSwgYWZvbmlhIG9wY2lvbmFsLjwvcD5cblxuPGRpdiBjbGFzcz1cInRpY2tldFwiPlxuICA8ZGl2IGNsYXNzPVwidC1tYWluXCI+XG4gICAgPGRpdiBjbGFzcz1cInQtdG9wXCI+RU5UUkFEQSDCtyBWSVAgPHNwYW4+KFZlcnkgSW1wb3J0YW50IFBhcmVsbGEpPC9zcGFuPjwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJ0LWJhbmRcIj5NT1JBVDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJ0LXN1YlwiPmVuIGNvbmNlcnQ8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzPVwidC1ncmlkXCI+XG4gICAgICA8ZGl2PjxzbWFsbD5Bc3Npc3RlbnRzPC9zbWFsbD48Yj5DbGFyZXRhICsgQ2FybG9zPC9iPjwvZGl2PlxuICAgICAgPGRpdj48c21hbGw+UmV1bmnDsyBhbWI8L3NtYWxsPjxiPkZhbcOtbGlhIFNhbGFzPC9iPjwvZGl2PlxuICAgICAgPGRpdj48c21hbGw+Wm9uYTwvc21hbGw+PGI+T24gc2Ugc2VudGEgY2FudGFyIGxhIENsYXJldGE8L2I+PC9kaXY+XG4gICAgICA8ZGl2PjxzbWFsbD5FeHRyZXM8L3NtYWxsPjxiPkNvbnN1bWljacOzIGluY2xvc2Eg4pyTPC9iPjwvZGl2PlxuICAgIDwvZGl2PlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInQtc3R1YlwiPjxzbWFsbD5BRE1JVDwvc21hbGw+PGI+MjwvYj48ZGl2IGNsYXNzPVwiYmFyY29kZVwiPjwvZGl2PjwvZGl2PlxuPC9kaXY+XG5cbjxkaXYgY2xhc3M9XCJjYXJkXCI+XG4gIDxoMj5PcmRyZSBkZWwgZGlhPC9oMj5cbiAgPG9sPlxuICAgIDxsaT5TYWx1ZGFyIGxhIGZhbcOtbGlhIFNhbGFzIGNvbSBzaSBubyBlbnMgaGFndcOpcmVtIHZpc3QgZW4gYW55cy48L2xpPlxuICAgIDxsaT5DYW50YXItbGVzIHRvdGVzLiBTYWJlci1zZSBsYSBsbGV0cmE6IHJlY29tYW5hYmxlLCBubyBvYmxpZ2F0b3JpLjwvbGk+XG4gICAgPGxpPkNhbsOnw7MgbGVudGE6IGVzIHBlcm1ldCBwbG9yYXIgdW4gcG9xdWV0LiBKbyBubyBtaXJlLjwvbGk+XG4gIDwvb2w+XG48L2Rpdj5cblxuPHAgY2xhc3M9XCJiaWdcIj5JIGVsIG3DqXMgaW1wb3J0YW50OiA8ZW0+Y29uc3VtaWNpw7MgaW5jbG9zYTwvZW0+Ljxicj48c3BhbiBjbGFzcz1cInNtYWxsXCI+Q29udmlkYSBsYSBjYXNhIChsYSBjYXNhIHNvYyBqbykuPC9zcGFuPjwvcD5cbjxkaXYgY2xhc3M9XCJwaG90b1wiPjxzcGFuPvCfk7g8L3NwYW4+PGRpdj48Yj5Gb3RvIHBlciBhIGwnw6BsYnVtPC9iPjxicj5TZWxmaWUgYW1iIGxhIGZhbcOtbGlhIFNhbGFzIGkgbCdlc2NlbmFyaSBkZSBmb25zLjwvZGl2PjwvZGl2PiIsICJjb25mZXR0aSI6IFsiI2Y5ZDY1YyIsICIjZmY1ZThhIiwgIiM3YjVjZmYiLCAiI2ZmZmZmZiJdfQ=="};</script>
+<script>
+(function(){
+  var C = window.SOBRE, app = document.getElementById('app'), bg = document.getElementById('bg');
+  var q = new URLSearchParams(location.search);
+  var preview = q.get('preview') === 'cq7x';
+  var unlock = Date.parse(C.unlock);
+  function store(k,v){try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k,JSON.stringify(v)); }catch(e){ return null; }}
+  function decode(b){ var s=atob(b), a=new Uint8Array(s.length); for(var i=0;i<s.length;i++)a[i]=s.charCodeAt(i); return JSON.parse(new TextDecoder().decode(a)); }
+  var QUIPS = ["Para, para, Clareta!","Eh, eh, eh… qui t'ha donat permís?","Bon intent. Molt bon intent.","La paciència també és un pla.","Este sobre encara està dormint."];
+
+  function envelope(){ return '<div class="env" id="env"><div class="flap"></div><div class="seal">'+C.n+'</div></div>'; }
+
+  function locked(){
+    var quip = QUIPS[Math.floor(Math.random()*QUIPS.length)];
+    app.innerHTML = '<section class="gate"><p class="to">Per a Clareta</p>'+envelope()+
+      '<h1>'+quip+'</h1><p>Este sobre no s\'obri fins a l\'<b>'+C.unlock_txt+'</b>. Fins llavors, a imaginar.</p>'+
+      '<div class="cd" id="cd"></div></section>';
+    var cd = document.getElementById('cd');
+    function tick(){
+      var ms = unlock - Date.now();
+      if (ms <= 0) { location.reload(); return; }
+      var s = Math.floor(ms/1000), d = Math.floor(s/86400), h = Math.floor(s%86400/3600), m = Math.floor(s%3600/60), x = s%60;
+      cd.innerHTML = [[d,'dies'],[h,'hores'],[m,'min'],[x,'seg']].map(function(p){return '<div><b>'+String(p[0]).padStart(2,'0')+'</b><small>'+p[1]+'</small></div>';}).join('');
+    }
+    tick(); setInterval(tick, 1000);
+  }
+
+  function sealed(){
+    app.innerHTML = '<section class="gate" id="gate"><p class="to">Per a Clareta</p>'+envelope()+
+      '<h1>Ha arribat el teu sobre '+C.month_de+'</h1><button class="open-btn" id="open">Toca per a obrir</button></section>';
+    document.getElementById('open').onclick = function(){
+      document.getElementById('env').classList.add('opening');
+      document.getElementById('gate').classList.add('fade');
+      setTimeout(reveal, 1100);
+    };
+  }
+
+  function reveal(){
+    var P = decode(C.payload);
+    document.body.className = P.theme;
+    bg.innerHTML = P.bg;
+    app.innerHTML = '<article class="msg">'+P.html+'</article>';
+    window.scrollTo(0,0);
+    confetti(P.confetti);
+    wireChoices(P.confetti); wireChecks(P.confetti);
+  }
+
+  function wireChoices(colors){
+    var box = document.querySelector('.choices'); if(!box) return;
+    var res = document.getElementById('choice-result'), key = box.dataset.key;
+    function pick(btn, anim){
+      box.querySelectorAll('.choice').forEach(function(b){b.classList.toggle('sel', b===btn);});
+      box.classList.add('made'); res.textContent = btn.dataset.result; res.classList.add('ok');
+      store(key, btn.dataset.id); if(anim) confetti(colors);
+    }
+    box.querySelectorAll('.choice').forEach(function(b){ b.onclick = function(){ pick(b, true); }; });
+    var saved = store(key); if (saved) { var b = box.querySelector('[data-id="'+saved+'"]'); if (b) pick(b, false); }
+  }
+
+  function wireChecks(colors){
+    var box = document.querySelector('.checks'); if(!box) return;
+    var key = box.dataset.key, st = store(key) || {}, items = box.querySelectorAll('.check');
+    var prog = document.getElementById('progress'), done = document.getElementById('all-done');
+    function render(anim){
+      var n = 0; items.forEach(function(b){ var on=!!st[b.dataset.id]; b.classList.toggle('on',on); if(on)n++; });
+      prog.textContent = n+' / '+items.length+' completats';
+      var all = n === items.length; var was = done.classList.contains('show');
+      done.classList.toggle('show', all); if (all && !was && anim) confetti(colors, 260);
+    }
+    items.forEach(function(b){ b.onclick = function(){ st[b.dataset.id] = !st[b.dataset.id]; store(key, st); render(true); }; });
+    render(false);
+  }
+
+  function confetti(colors, count){
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var c = document.createElement('canvas'); c.id='confetti'; document.body.appendChild(c);
+    var x = c.getContext('2d'), W = c.width = innerWidth*devicePixelRatio, H = c.height = innerHeight*devicePixelRatio, dpr = devicePixelRatio;
+    c.style.width = innerWidth+'px'; c.style.height = innerHeight+'px';
+    var ps = []; count = count || 160;
+    for (var i=0;i<count;i++) ps.push({x:W/2+(Math.random()-.5)*W*.3, y:H*.35, vx:(Math.random()-.5)*14*dpr, vy:(-Math.random()*16-4)*dpr,
+      w:(6+Math.random()*6)*dpr, h:(8+Math.random()*10)*dpr, r:Math.random()*6, vr:(Math.random()-.5)*.3, col:colors[i%colors.length]});
+    var t = 0;
+    (function loop(){
+      x.clearRect(0,0,W,H); t++;
+      ps.forEach(function(p){ p.vy += .45*dpr; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.r += p.vr;
+        x.save(); x.translate(p.x,p.y); x.rotate(p.r); x.fillStyle=p.col; x.globalAlpha=Math.max(0,1-t/170); x.fillRect(-p.w/2,-p.h/2,p.w,p.h); x.restore(); });
+      if (t < 170) requestAnimationFrame(loop); else c.remove();
+    })();
+  }
+
+  if (Date.now() >= unlock || preview) sealed(); else locked();
+})();
+</script>
+</body>
+</html>
